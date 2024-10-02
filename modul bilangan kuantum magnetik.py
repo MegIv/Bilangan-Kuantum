@@ -1,10 +1,9 @@
 def Kuantum_Magnetik(subkulit, jumlah_elektron):
-
     if subkulit == 's':
         l = 0  
         jumlah_orbital = 1
     elif subkulit == 'p':
-        l = 
+        l = 1
         jumlah_orbital = 3
     elif subkulit == 'd':
         l = 2 
