@@ -28,6 +28,7 @@ def Kuantum_Magnetik(subkulit, jumlah_elektron):
                     posisi_terakhir = pengisian  
                     break
     print(f"Nilai Kuantum Magnetik = {bilangan_kuantum_magnetik[posisi_terakhir]}")
+    __init__ == '__main__'
 subkulit = input("Masukkan subkulit (s, p, d, f): ")
 jumlah_elektron = int(input("Masukkan jumlah elektron: "))
 Kuantum_Magnetik(subkulit, jumlah_elektron)
