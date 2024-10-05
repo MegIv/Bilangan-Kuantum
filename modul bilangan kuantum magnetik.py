@@ -53,6 +53,3 @@ def Kuantum_Magnetik(nomor_atom):
                         posisi_terakhir = pengisian  
                         break
         print(f"Nilai Kuantum Magnetik = {bilangan_kuantum_magnetik[posisi_terakhir]}")
-
-
-
