@@ -52,3 +52,4 @@ def Kuantum_Magnetik(nomor_atom):
                         orbital[pengisian][1] = 1   
                         posisi_terakhir = pengisian  
                         break
+
