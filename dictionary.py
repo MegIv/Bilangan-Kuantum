@@ -25,7 +25,7 @@ tabel_periodik = {
     },
     "Golongan 4A": {
         "Karbon (C)":6,
-        "Silicon (Si)':14,
+        "Silicon (Si)': 14,
         "Germanium (Ge)":32,
         "Timah (Sn)":50,
         "Timbal (Pb)":82
