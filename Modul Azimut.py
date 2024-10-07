@@ -30,15 +30,10 @@ def konfigurasi_elektron(nomor_atom):
                 konfigurasi.append(f'{sub}{kapasitas}')
                 sisa_elektron -= kapasitas
             else:
-                konfigurasi.append(f'{sub}{kapasitas}')
+                konfigurasi.append(f'{sub}{sisa_elektron}')
                 sisa_elektron = 0
     return ' '.join(konfigurasi)
-
-#sebagai contoh unsur Fe dengan nomor atom 26:
-__init__ = '__main__'
-nomor_atom = 26
-print(konfigurasi_elektron(nomor_atom))
-
+    
 def mengambil_konfigurasi_terakhir(konfigurasi) :
     subkulit_terakhir = konfigurasi.split() [-1]
     for subkulit in subkulit_terakhir:
@@ -55,7 +50,5 @@ def bilangan_kuantum_azimut(konfigurasi):
     konfigurasi_terakhir = mengambil_konfigurasi_terakhir(konfigurasi)
     return nilai_kulit.get(konfigurasi_terakhir)
 
-__init__ = '__main__' 
 konfigurasi = konfigurasi_elektron(nomor_atom)
 bilangan_kuantum = bilangan_kuantum_azimut(konfigurasi)
-print(f'l =', bilangan_kuantum)
