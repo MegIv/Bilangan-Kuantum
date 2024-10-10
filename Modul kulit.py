@@ -33,22 +33,3 @@ def konfigurasi_elektron(nomor_atom):
                 konfigurasi.append(f'{sub}{sisa_elektron}')
                 sisa_elektron = 0
     return ' '.join(konfigurasi)
-    
-def mengambil_konfigurasi_terakhir(konfigurasi) :
-    subkulit_terakhir = konfigurasi.split() [-1]
-    for subkulit in subkulit_terakhir:
-        if subkulit.isalpha():
-            return subkulit
-
-def bilangan_kuantum_azimut(konfigurasi):
-    nilai_kulit = {
-        's': 0,
-        'p': 1,
-        'd': 2,
-        'f': 3
-    }
-    konfigurasi_terakhir = mengambil_konfigurasi_terakhir(konfigurasi)
-    return nilai_kulit.get(konfigurasi_terakhir)
-
-konfigurasi = konfigurasi_elektron(nomor_atom)
-bilangan_kuantum = bilangan_kuantum_azimut(konfigurasi)
