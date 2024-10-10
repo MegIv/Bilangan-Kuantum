@@ -52,3 +52,5 @@ def bilangan_kuantum_azimut(konfigurasi):
 
 konfigurasi = konfigurasi_elektron(nomor_atom)
 bilangan_kuantum = bilangan_kuantum_azimut(konfigurasi)
+# hahaha
+
