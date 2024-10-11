@@ -1,5 +1,5 @@
 def cari_nama_unsur(nomor_atom):
-    "Mencari nama dan golongan unsur kimia berdasarkan nomor atom"
+# Mencari nama dan golongan unsur kimia berdasarkan nomor atom
     if nomor_atom == 1:
         return "1A : Hidrogen (H)"
     elif nomor_atom == 3:
