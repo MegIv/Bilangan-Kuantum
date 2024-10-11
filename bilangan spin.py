@@ -26,19 +26,14 @@ def Kuantum_Magnetik(nomor_atom):
     if subkulit_terakhir:
         subkulit_terakhir =  subkulit_terakhir[1:]    
         if subkulit_terakhir == 's':
-            l = 0  
             jumlah_orbital = 1
-        elif subkulit_terakhir == 'p':
-            l = 1  
+        elif subkulit_terakhir == 'p': 
             jumlah_orbital = 3
         elif subkulit_terakhir == 'd':
-            l = 2 
             jumlah_orbital = 5
-        elif subkulit_terakhir == 'f':
-            l = 3  
+        elif subkulit_terakhir == 'f': 
             jumlah_orbital = 7
         orbital = [[0, 0] for _ in range(jumlah_orbital)]  
-        bilangan_kuantum_magnetik = list(range(-l, l + 1))
         posisi_terakhir = None
         spin_terakhir = None
         for i in range(elektron_terakhir):  
