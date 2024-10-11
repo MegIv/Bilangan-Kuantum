@@ -33,3 +33,6 @@ def konfigurasi_elektron(nomor_atom):
                 konfigurasi.append(f'{sub}{sisa_elektron}')
                 sisa_elektron = 0
     return ' '.join(konfigurasi)
+
+
+print(konfigurasi_elektron(20))
