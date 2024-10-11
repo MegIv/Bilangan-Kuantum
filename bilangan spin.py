@@ -50,3 +50,5 @@ def Kuantum_Magnetik(nomor_atom):
                         posisi_terakhir = pengisian  
                         spin_terakhir = "-1/2"  
                         break
+        print(f"Nilai Kuantum Spin = {spin_terakhir}")
+Kuantum_Magnetik(10) # contoh nomor atom
