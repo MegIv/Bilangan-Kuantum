@@ -52,5 +52,6 @@ def Kuantum_Magnetik(nomor_atom):
                         orbital[pengisian][1] = 1   
                         posisi_terakhir = pengisian  
                         break
-        __init__="__main__"
+    print(f"Nilai Kuantum Magnetik = {bilangan_kuantum_magnetik[posisi_terakhir]}")
+ __init__="__main__"
 
