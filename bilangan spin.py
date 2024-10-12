@@ -1,4 +1,4 @@
-def Kuantum_Magnetik(nomor_atom): 
+def Bilangan_Spin(nomor_atom): 
     sub_kulit = [
         ('1s', 2), ('2s', 2), ('2p', 6), 
         ('3s', 2), ('3p', 6), ('4s', 2), 
@@ -34,21 +34,18 @@ def Kuantum_Magnetik(nomor_atom):
         elif subkulit_terakhir == 'f': 
             jumlah_orbital = 7
         orbital = [[0, 0] for _ in range(jumlah_orbital)]  
-        posisi_terakhir = None
         spin_terakhir = None
         for i in range(elektron_terakhir):  
             for pengisian in range(jumlah_orbital):
                 if orbital[pengisian][0] == 0: 
-                    orbital[pengisian][0] = 1  
-                    posisi_terakhir = pengisian  
+                    orbital[pengisian][0] = 1   
                     spin_terakhir = "+1/2" 
                     break
             else:
                 for pengisian in range(jumlah_orbital):
                     if orbital[pengisian][1] == 0:  
                         orbital[pengisian][1] = 1   
-                        posisi_terakhir = pengisian  
                         spin_terakhir = "-1/2"  
                         break
         print(f"Nilai Kuantum Spin = {spin_terakhir}")
-Kuantum_Magnetik(10) # contoh nomor atom
+Bilangan_Spin(10) # contoh nomor atom
