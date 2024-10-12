@@ -4,16 +4,10 @@ Paket ini membantu menghitung berbagai bilangan kuantum berdasarkan nomor atom. 
 
 ## Instalasi
 
-Pastikan Python sudah terpasang di sistem Anda. Clone repositori ini dan letakkan modul-modulnya dalam direktori yang sama, atau atur dalam bentuk package. Untuk menginstal package, cukup clone atau unduh file-file ini.
-
-### Clone Repositori:
-```bash
-git clone https://github.com/repo-anda/quantum-numbers-package.git
-cd quantum-numbers-package
-```
+Pastikan Python sudah terpasang di sistem Anda. 
 ### pip:
 ```bash
-pip install Bilangan_kuantum
+pip install quantum-101==0.2
 ```
 
 ### Contoh Penggunaan
@@ -21,36 +15,36 @@ pip install Bilangan_kuantum
 Berikut adalah contoh sederhana cara menggunakan package ini setelah diinstal:
 
 ```python
-import modulKulit
-import modulKuantumUtama
-import modulKuantumAzimut
-import modulKuantumMagnetik
-import modulSpin
-import modulNomorAtom
+import konfig_elektron
+import kuantum_utama
+import kuantum_azimut
+import kuantum_magnetik
+import kuantum_spin
+import nomor_atom
 
 # Contoh: Menghitung properti kuantum untuk unsur Besi (Fe) dengan nomor atom 26.
 nomor_atom = 26
 
 # Konfigurasi elektron
-konfigurasi_elektron = modulKulit.konfigurasi_elektron(nomor_atom)
+konfigurasi_elektron = konfig_elektron.konfigurasi_elektron(nomor_atom)
 print(f"Konfigurasi Elektron: {konfigurasi_elektron}")
 
 # Bilangan kuantum utama (n)
-n = modulKuantumUtama.kuantumUtama(nomor_atom)
+n = kuantum_utama.kuantumUtama(nomor_atom)
 print(f"Bilangan Kuantum Utama: n = {n}")
 
 # Bilangan kuantum azimut (l)
-l = modulKuantumAzimut.bilangan_kuantum_azimut(konfigurasi_elektron)
+l = kuantum_azimut.bilangan_kuantum_azimut(konfigurasi_elektron)
 print(f"Bilangan Kuantum Azimut: l = {l}")
 
 # Bilangan kuantum magnetik (ml)
-modulKuantumMagnetik.Kuantum_Magnetik(nomor_atom)
+kuantum_magnetik.Kuantum_Magnetik(nomor_atom)
 
 # Bilangan kuantum spin (ms)
-modulSpin.Kuantum_Magnetik(nomor_atom)
+kuantum_spin.Bilangan_Spin(nomor_atom)
 
 # Nama unsur dan golongan
-nama_unsur = modulNomorAtom.cari_nama_unsur(nomor_atom)
+nama_unsur = nomor_atom.cari_nama_unsur(nomor_atom)
 print(f"Unsur: {nama_unsur}")
 ```
 
@@ -69,7 +63,7 @@ konfigurasi_elektron(nomor_atom)
 
 #### Penggunaan:
 ```python
-konfigurasi = modulKulit.konfigurasi_elektron(26)
+konfigurasi = konfig_elektron.konfigurasi_elektron(26)
 print(konfigurasi)  # Output: Konfigurasi elektron untuk unsur Besi (Fe)
 ```
 
@@ -86,7 +80,7 @@ kuantumUtama(nomor_atom)
 
 #### Penggunaan:
 ```python
-n = modulKuantumUtama.kuantumUtama(26)
+n = kuantum_utama.kuantumUtama(26)
 print(n)  # Output: Bilangan kuantum utama
 ```
 
@@ -103,7 +97,7 @@ bilangan_kuantum_azimut(konfigurasi)
 
 #### Penggunaan:
 ```python
-l = modulKuantumAzimut.bilangan_kuantum_azimut(konfigurasi_elektron)
+l = kuantum_azimut.bilangan_kuantum_azimut(konfigurasi_elektron)
 print(l)  # Output: Bilangan kuantum azimut
 ```
 
@@ -120,7 +114,7 @@ Kuantum_Magnetik(nomor_atom)
 
 #### Penggunaan:
 ```python
-modulKuantumMagnetik.Kuantum_Magnetik(26)  
+kuantum_magnetik.Kuantum_Magnetik(26)  
 # Output: Bilangan kuantum magnetik untuk Besi
 ```
 
@@ -132,12 +126,12 @@ Modul ini menghitung bilangan kuantum spin (ms) untuk elektron terakhir.
 
 #### Fungsi:
 ```python
-Kuantum_Magnetik(nomor_atom)
+Bilangan_Spin(nomor_atom)
 ```
 
 #### Penggunaan:
 ```python
-modulSpin.Kuantum_Magnetik(26)  
+kuantum_spin.Bilangan_Spin(26)  
 # Output: Bilangan kuantum spin untuk Besi
 ```
 
@@ -154,7 +148,7 @@ cari_nama_unsur(nomor_atom)
 
 #### Penggunaan:
 ```python
-nama_unsur = modulNomorAtom.cari_nama_unsur(26)
+nama_unsur = nomor_atom.cari_nama_unsur(26)
 print(nama_unsur)  # Output: Nama unsur dan golongan untuk Besi
 ```
 
