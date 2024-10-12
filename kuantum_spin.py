@@ -1,4 +1,4 @@
-def Bilangan_Spin(nomor_atom): 
+def Kuantum_Spin(nomor_atom): 
     sub_kulit = [
         ('1s', 2), ('2s', 2), ('2p', 6), 
         ('3s', 2), ('3p', 6), ('4s', 2), 
