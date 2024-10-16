@@ -48,4 +48,4 @@ def Kuantum_Spin(nomor_atom):
                         spin_terakhir = "-1/2"  
                         break
         print(f"Nilai Kuantum Spin = {spin_terakhir}")
-Bilangan_Spin(10) # contoh nomor atom
+Kuantum_Spin(10) # contoh nomor atom
